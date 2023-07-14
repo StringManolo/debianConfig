@@ -16,6 +16,12 @@ apt install nodejs
 apt install vim
 ```
 
+### Install curl
+```bash
+apt install curl
+```
 
-
-
+### Install StringManolo's bash shell extension
+```bash
+curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.basrc && source ~/.bashrc
+```
