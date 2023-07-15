@@ -37,6 +37,16 @@ apt install vim
 apt install curl
 ```
 
+#### Install git
+```bash
+apt install git
+```
+
+#### Install gh
+```bash
+apt install gh
+```
+
 #### Install vim-plug
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -89,7 +99,7 @@ curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.b
 
 #### Do all previous steps at once
 ```bash
-curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/fd01a33d97461919843a803d6c0713848cfe58d8/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 && ./debianConfigSetup.sh
+curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/3190eec90b01f43bb884abb64028289ad0507117/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 && ./debianConfigSetup.sh
 ```
 
 ## Optional
