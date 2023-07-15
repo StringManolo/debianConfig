@@ -2,6 +2,7 @@
 
 apt update && apt upgrade;
 apt install nodejs;
+apt install tree;
 apt install vim;
 apt install curl;
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim;
