@@ -42,6 +42,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 curl 'https://github.com/StringManolo/debianConfig/blob/b2ea63bc39f408f87c7e9a613e04e0a640b4f6eb/configFiles/.vimrc' -o ~/.vimrc
 ```
 
+#### set-up codeium plugin
+```bash
+# placeholder
+```
+
 #### install vim plugins
 ```bash
 vim
