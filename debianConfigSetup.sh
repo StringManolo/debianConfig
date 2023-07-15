@@ -2,6 +2,8 @@
 
 apt update && apt upgrade;
 apt install nodejs;
+apt install npm;
+npm install -g http-server;
 apt install tree;
 apt install vim;
 apt install curl;
