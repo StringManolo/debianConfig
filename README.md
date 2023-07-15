@@ -31,6 +31,12 @@ apt install vim
 apt install curl
 ```
 
+### Install vim-plug
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 ### install unzip
 ```bash
 apt install unzip
