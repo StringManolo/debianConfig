@@ -1,4 +1,12 @@
-" Enable syntax highlighting
+" Change colorscheme
+colorscheme habamax
+
+" Add small horizontal padding
+set foldcolumn=1
+set numberwidth=1
+set colorcolumn=87
+
+"Enable syntax highlighting
 syntax enable
 
 " Enable filetype detection
@@ -16,10 +24,10 @@ set shiftwidth=2
 set cursorline
 
 " Customize CursorLine highlight
-highlight CursorLine cterm=NONE ctermbg=DarkGrey gui=NONE guibg=DarkGrey
+highlight CursorLine cterm=NONE ctermbg=Black gui=NONE guibg=Black
 
 " Customize CursorLineNr highlight
-highlight CursorLineNr cterm=NONE ctermfg=NONE ctermbg=DarkGrey gui=NONE guifg=NONE guibg=DarkGrey
+highlight CursorLineNr cterm=NONE ctermfg=NONE ctermbg=Black gui=NONE guifg=NONE guibg=Black
 
 " Highlight search results
 set hlsearch
