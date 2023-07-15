@@ -26,8 +26,11 @@ apt install curl
 apt install unzip
 ```
 
-### Install qjs
+### Install qjs and qjsc (needed for aarch64)
 ```bash
+curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjs' -o ~/SMBSE/bin/qjs
+
+curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjsc' -o ~/SMBSE/bin/qjsc
 
 ```
 
