@@ -45,6 +45,11 @@ mv debianConfig/bin/aarch64/qj* ~/SMBSE/bin/
 rm debianConfig/ -r
 ```
 
+### Install 7z
+```bash
+apt install 7zip
+```
+
 ### Install StringManolo's bash shell extension
 ```bash
 curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.basrc && source ~/.bashrc
