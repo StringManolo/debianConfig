@@ -83,5 +83,5 @@ curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.b
 
 #### Do all previous steps at once
 ```bash
-curl script.sh
+curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/fd01a33d97461919843a803d6c0713848cfe58d8/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 && ./debianConfigSetup.sh
 ```
