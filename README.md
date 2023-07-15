@@ -111,7 +111,7 @@ curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.b
 
 #### Do all previous steps at once
 ```bash
-curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/3190eec90b01f43bb884abb64028289ad0507117/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 && ./debianConfigSetup.sh
+curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/3dfc1a07e5c96d369fe29a915e890a84c0a0986e/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 && ./debianConfigSetup.sh
 ```
 
 ## Optional
