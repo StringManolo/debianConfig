@@ -47,7 +47,7 @@ rm debianConfig/ -r
 
 ### Install 7z
 ```bash
-apt install 7zip
+apt install p7zip-full
 ```
 
 ### Install StringManolo's bash shell extension
