@@ -93,3 +93,22 @@ set fileformat=unix
 filetype indent on
 filetype plugin on
 filetype plugin indent on
+
+" Leader key for custom shortcuts
+let mapleader = ","
+
+" TypeScript type highlighting
+let g:typescript_highlight_builtins = 1
+let g:typescript_enable_domhtmlcss = 1
+
+
+" Comment HTML
+nnoremap <leader>ch I<!-- <Esc>A --><Esc>O<End><Del><Esc>
+" Remove Comment
+nnoremap <leader>rh :s/<!-- \(.*\) -->/\1<CR>
+
+
+" Comment CSS
+nnoremap <leader>cc I/* <Esc>A */<Esc>O<End><Del><Esc>
+" Remove Comment
+nnoremap <leader>rc :s/\/\* \(.*\) \*\//\1<CR>
