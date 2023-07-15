@@ -59,6 +59,11 @@ apt install git
 apt install gh
 ```
 
+#### Install python3
+```bash
+apt install python3
+```
+
 #### Install vim-plug
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
