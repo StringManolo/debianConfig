@@ -22,6 +22,11 @@ apt update && apt upgrade
 apt install nodejs
 ```
 
+#### install tree
+```bash
+apt install tree
+```
+
 #### Install vim
 ```bash
 apt install vim
