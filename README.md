@@ -30,7 +30,7 @@ apt install unzip
 ```bash
 curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjs' -o ~/SMBSE/bin/qjs
 
-curl 'https://github.com/StringManolo/debianConfig/blob/c6101e1fc03b7f7e13dbb29d955099acd6fb2b0e/bin/aarch64/qjsc' -o ~/SMBSE/bin/qjsc
+curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjsc' -o ~/SMBSE/bin/qjsc
 
 ```
 
