@@ -112,3 +112,24 @@ nnoremap <leader>rh :s/<!-- \(.*\) -->/\1<CR>
 nnoremap <leader>cc I/* <Esc>A */<Esc>O<End><Del><Esc>
 " Remove Comment
 nnoremap <leader>rc :s/\/\* \(.*\) \*\//\1<CR>
+
+
+" Vim-Plug config
+call plug#begin('~/.vim/plugged')
+
+" Add emmet plug
+Plug 'mattn/emmet-vim'
+
+" End Vim-Plug config
+call plug#end()
+
+" Use triple comma to expand emmet sintax
+let g:user_emmet_leader_key=',,'
+au FileType html,css,js,ts,javascriptreact,typescriptreact imap <expr> ,, <SID>emmetExpandAbbr()
+function! s:emmetExpandAbbr()
+    if getline('.')[col('.') - 3] == ','
+        return "\<C-y>,"
+    else
+        return ",,"
+    endif
+endfunction
