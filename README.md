@@ -35,3 +35,9 @@ apt install unzip
 ```bash
 curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.basrc && source ~/.bashrc
 ```
+
+
+### Do all previous steps at once
+```bash
+curl script.sh
+```
