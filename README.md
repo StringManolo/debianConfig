@@ -32,6 +32,9 @@ curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjs' -o 
 
 curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjsc' -o ~/SMBSE/bin/qjsc
 
+chmod 775 ~/SMBSE/bin/qjs
+chmod 775 ~/SMBSE/bin/qjsc
+
 ```
 
 ### Install StringManolo's bash shell extension
