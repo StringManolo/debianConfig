@@ -133,3 +133,15 @@ function! s:emmetExpandAbbr()
         return ",,"
     endif
 endfunction
+
+
+
+" Vim-Plug config
+ call plug#begin('~/.vim/plugged')
+
+" Add Codeium plugin
+Plug 'Exafunction/codeium.vim'
+" :Codeium Auth
+
+" End Vim-Plug config
+ call plug#end()
