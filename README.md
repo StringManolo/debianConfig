@@ -1,5 +1,15 @@
 # debianConfig
 
+Configure the system for work installing the most basic packages, adding alias, colors to  output and man pages, adding js and c++ as scripting languages to the shell, etc.
+
+_This is for Termux aarch64, steps for Linux  in PC, rapberry or other archs may be very similar_
+
+### Create debian command
+```bash
+echo  '#!/usr/bin/env sh
+
+proot-distro login debian --isolated --fix-low-ports' > ~/../usr/bin/debian
+```
 
 ### Update packages list and upgrade them
 ```bash
