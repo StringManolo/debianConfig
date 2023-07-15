@@ -28,13 +28,11 @@ apt install unzip
 
 ### Install qjs and qjsc (needed for aarch64)
 ```bash
-curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjs' -o ~/SMBSE/bin/qjs
+git clone https://github.com/StringManolo/debianConfig/
 
-curl 'https://github.com/StringManolo/debianConfig/raw/main/bin/aarch64/qjsc' -o ~/SMBSE/bin/qjsc
+mv debianConfig/bin/aarch64/qj* ~/SMBSE/bin/
 
-chmod 775 ~/SMBSE/bin/qjs
-chmod 775 ~/SMBSE/bin/qjsc
-
+rm debianConfig/ -r
 ```
 
 ### Install StringManolo's bash shell extension
