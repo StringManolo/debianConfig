@@ -24,6 +24,16 @@ apt update && apt upgrade
 apt install nodejs
 ```
 
+#### Install npm
+```bash
+apt install npm
+```
+
+### Install http-server
+```bash
+npm install -g http-server
+```
+
 #### install tree
 ```bash
 apt install tree
