@@ -51,7 +51,9 @@ vim
 
 #### set-up codeium plugin
 ```bash
-# placeholder
+vim
+
+# Inside vim enter ":Codeium Auth" without quotes. Follow steps to sign-in and get your token.
 ```
 
 #### install unzip
