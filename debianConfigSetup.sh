@@ -9,6 +9,7 @@ yes | apt install vim;
 yes | apt install curl;
 yes | apt install git;
 yes | apt install gh;
+yes | apt install python3;
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim;
 curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/d2bfbda769ca5859dff71e0475dd4d932e8d149a/configFiles/.vimrc' -o ~/.vimrc;
 yes | apt install unzip;
