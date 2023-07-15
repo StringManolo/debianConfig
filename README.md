@@ -21,6 +21,16 @@ apt install vim
 apt install curl
 ```
 
+### install unzip
+```bash
+apt install unzip
+```
+
+### Install qjs
+```bash
+
+```
+
 ### Install StringManolo's bash shell extension
 ```bash
 curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.basrc && source ~/.bashrc
