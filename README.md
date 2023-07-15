@@ -37,6 +37,18 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+### install .vimrc
+```bash
+not yet
+```
+
+### install vim plugins
+```bash
+vim
+
+# Inside vim enter ":PlugInstall" without quotes
+```
+
 ### install unzip
 ```bash
 apt install unzip
