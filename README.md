@@ -1,15 +1,16 @@
 # debianConfig
 
-Configure the system for work installing the most basic packages, adding alias, colors to  output and man pages, adding js and c++ as scripting languages to the shell, vim  plugins, etc. Everything is focused on productivity/utility, not much "fancy" features added.
-
-_This is for Termux aarch64 (proot-distro), steps for Linux in PC, raspberry or other archs may be very similar_
-
 #### Create debian command
 ```bash
 echo  '#!/usr/bin/env sh
 
 proot-distro login debian --isolated --fix-low-ports' > ~/../usr/bin/debian
 ```
+
+Configure the system for work installing the most basic packages, adding alias, colors to  output and man pages, adding js and c++ as scripting languages to the shell, vim  plugins, etc. Everything is focused on productivity/utility, not much "fancy" features added.
+
+_This is for Termux aarch64 (proot-distro), steps for Linux in PC, raspberry or other archs may be very similar_
+
 
 #### Update packages list and upgrade them
 ```bash
