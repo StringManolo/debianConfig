@@ -1,5 +1,7 @@
 # debianConfig
 
+_My main development OS_
+
 #### Create debian command
 ```bash
 echo  '#!/usr/bin/env sh
