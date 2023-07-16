@@ -39,6 +39,17 @@ npm install -g http-server
 apt install tree
 ```
 
+#### install jq
+```bash
+apt install jq
+# todo: add to script.sh
+```
+
+#### install tgbot.sh
+```bash
+placeholder
+```
+
 #### Install vim
 ```bash
 apt install vim
