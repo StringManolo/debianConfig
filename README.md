@@ -135,3 +135,8 @@ curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/3dfc1a07e5c96d
 ```bash
 apt install clang make gcc
 ```
+
+#### Install solc (solidity compiler for smart contracts)
+```bash
+npm install solc
+```
