@@ -77,7 +77,13 @@ apt install python3
 
 #### Install pip
 ```bash
-apt get python3-pip
+apt install python3-pip
+# add to script.sh
+```
+
+#### Install venv
+```bash
+apt install python3.11-venv
 # add to script.sh
 ```
 
