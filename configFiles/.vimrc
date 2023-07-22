@@ -120,6 +120,10 @@ call plug#begin('~/.vim/plugged')
 " Add emmet plug
 Plug 'mattn/emmet-vim'
 
+" Add Codeium plugin
+Plug 'Exafunction/codeium.vim'
+" :Codeium Auth
+
 " End Vim-Plug config
 call plug#end()
 
@@ -134,14 +138,3 @@ function! s:emmetExpandAbbr()
     endif
 endfunction
 
-
-
-" Vim-Plug config
- call plug#begin('~/.vim/plugged')
-
-" Add Codeium plugin
-Plug 'Exafunction/codeium.vim'
-" :Codeium Auth
-
-" End Vim-Plug config
- call plug#end()
