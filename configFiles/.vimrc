@@ -138,3 +138,46 @@ function! s:emmetExpandAbbr()
     endif
 endfunction
 
+
+function! AddHtmlSmSnippet()
+  let snippet_html_sm = "\\            'html:sm': \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head prefix=\\\"og:http://ogp.me/ns#\\\">\\n\\t<meta charset=\\\"utf-8\\\">\\n\\t<link rel=\\\"icon\\\" href=\\\"data:;base64,iVBORw0KGgo=\\\">\\n\\t<title>Index.html</title>\\n\\t<meta property=\\\"og:type\\\" content=\\\"website\\\">\\n\\t<link rel=\\\"stylesheet\\\" href=\\\"./styles.css\\\">\\n\\t<meta name=\\\"theme-color\\\" content=\\\"#ffffff\\\">\\n</head>\\n\\n<body>\\n\\n\\n\\t<script src=\\\"./main.js\\\"></script>\\n</body>\\n</html>\","
+  let emmet_file = expand('~/.vim/plugged/emmet-vim/autoload/emmet.vim')
+  let emmet_content = readfile(emmet_file)
+
+  let start_pattern = "\\\\\\s*'html:5': \"<!DOCTYPE html>\\\\n\""
+  let end_pattern = '\.\("<\/html>"\),'
+
+  let start_line = -1
+  let end_line = -1
+
+  let snippet_exists = 0
+  for line in emmet_content
+    if line =~ 'html:sm'
+      let snippet_exists = 1
+      break
+    endif
+  endfor
+
+
+  if snippet_exists == 0
+    for i in range(len(emmet_content))
+      if emmet_content[i] =~ start_pattern
+        let start_line = i
+        echom "start_line: " . start_line
+      endif
+
+      if start_line != -1 && emmet_content[i] =~ end_pattern
+        let end_line = i
+        echom "end_line: " . end_line
+        break
+      endif
+    endfor                                                             
+    if start_line != -1 && end_line != -1
+      let line_number = end_line + 1
+      call insert(emmet_content, snippet_html_sm, line_number)
+      call writefile(emmet_content, emmet_file)
+    endif
+  endif
+endfunction
+
+call AddHtmlSmSnippet()
