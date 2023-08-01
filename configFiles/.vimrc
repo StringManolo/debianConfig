@@ -114,18 +114,26 @@ nnoremap <leader>cc I/* <Esc>A */<Esc>O<End><Del><Esc>
 nnoremap <leader>rc :s/\/\* \(.*\) \*\//\1<CR>
 
 
-" Vim-Plug config
+
+" Vim-Plug config  (run `:PlugInstall` to install)
 call plug#begin('~/.vim/plugged')
 
-" Add emmet plug
+" Add emmet plugin
 Plug 'mattn/emmet-vim'
 
 " Add Codeium plugin
 Plug 'Exafunction/codeium.vim'
 " :Codeium Auth
 
+" Add NERDTree plugin
+Plug 'preservim/nerdtree'
+
 " End Vim-Plug config
 call plug#end()
+
+" Use <Leader>N as alias for :NERDTree
+nmap <Leader>n :NERDTreeToggle<CR>
+
 
 " Use triple comma to expand emmet sintax
 let g:user_emmet_leader_key=',,'
