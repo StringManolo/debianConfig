@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -i
 
 yes | apt update && apt upgrade;
 yes | apt install nodejs;
