@@ -13,6 +13,10 @@ Configure the system for work installing the most basic packages, adding alias, 
 
 _This is for Termux aarch64 (proot-distro), steps for Linux in PC, raspberry or other archs may be very similar_
 
+#### Do all steps at once
+```bash
+yes | apt update; yes | apt install curl && curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/refs/heads/main/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 debianConfigSetup.sh && ./debianConfigSetup.sh
+```
 
 #### Update packages list and upgrade them
 ```bash
@@ -136,11 +140,6 @@ apt install p7zip-full
 curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.basrc && source ~/.bashrc
 ```
 
-
-#### Do all previous steps at once
-```bash
-yes | apt update; yes | apt install curl && curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/refs/heads/main/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 debianConfigSetup.sh && ./debianConfigSetup.sh
-```
 
 ## Optional
 #### c/cpp compiling
