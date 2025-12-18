@@ -3,8 +3,8 @@
 yes | apt update && yes | apt upgrade;
 yes | apt install curl;
 yes | apt install nodejs;
-# node already had npm #
-npm --version || yes | apt install npm;
+# Maybe node already has npm #
+npm --version || yes | apt install --no-install-recommends npm;
 npm install -g http-server;
 yes | apt install tree;
 yes | apt install vim;
