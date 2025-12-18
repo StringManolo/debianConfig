@@ -114,18 +114,30 @@ nnoremap <leader>cc I/* <Esc>A */<Esc>O<End><Del><Esc>
 nnoremap <leader>rc :s/\/\* \(.*\) \*\//\1<CR>
 
 
+
 " Vim-Plug config
 call plug#begin('~/.vim/plugged')
 
-" Add emmet plug
+" Add emmet plugin
 Plug 'mattn/emmet-vim'
 
+" Add coc plugin
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Add Codeium plugin
 " Plug 'Exafunction/codeium.vim'
 ":Codeium Auth
 
 " End Vim-Plug config
 call plug#end()
+
+let g:coc_global_extensions = [
+      \ 'coc-tsserver',
+      \ 'coc-rust-analyzer',
+      \ 'coc-pyright',
+      \ 'coc-clangd',
+      \ 'coc-java',
+      \ 'coc-kotlin'
+      \ ]
 
 " Use triple comma to expand emmet sintax
 let g:user_emmet_leader_key=',,'
