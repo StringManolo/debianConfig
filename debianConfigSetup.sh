@@ -25,7 +25,8 @@ yes | apt install p7zip-full;
 curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/refs/heads/main/.bashrc' -o ~/.bashrc 
 
 # echo -e '\n\n\n\n\nInside vim enter ":PlugInstall" without quotes!\n';
-vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"
-echo 'Inside vim enter ":Codeium Auth" without quotes. Follow steps to sign-in and get your token.';
-
 exec bash
+
+vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"
+
+echo 'Setup complete! Inside Vim, run ":Codeium Auth" and follow the steps to get your token and activate your free AI coding assistant.';
