@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-yes | apt update && apt upgrade;
+yes | apt update && yes | apt upgrade;
 yes | apt install curl;
 yes | apt install nodejs;
 # node already had npm #
