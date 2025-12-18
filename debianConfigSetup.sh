@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 yes | apt update && apt upgrade;
+yes | apt install curl;
 yes | apt install nodejs;
 # node already had npm #
 npm --version || yes | apt install npm;
 npm install -g http-server;
 yes | apt install tree;
 yes | apt install vim;
-yes | apt install curl;
 yes | apt install git;
 yes | apt install gh;
 yes | apt install python3;
