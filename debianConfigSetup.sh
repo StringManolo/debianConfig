@@ -2,7 +2,8 @@
 
 yes | apt update && apt upgrade;
 yes | apt install nodejs;
-apt install npm;
+# node already had npm #
+# apt install npm;
 npm install -g http-server;
 yes | apt install tree;
 yes | apt install vim;
