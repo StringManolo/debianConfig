@@ -2,14 +2,14 @@
 
 yes | apt update && apt upgrade;
 yes | apt install nodejs;
-yes | apt install npm;
+apt install npm;
 npm install -g http-server;
 yes | apt install tree;
 yes | apt install vim;
 yes | apt install curl;
 yes | apt install git;
 yes | apt install gh;
-yes | apt install python3;
+apt install python3;
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim;
 curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/configFiles/.vimrc' -o ~/.vimrc;
 yes | apt install unzip;
