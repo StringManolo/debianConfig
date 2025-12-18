@@ -19,7 +19,7 @@ mkdir ~/SMBSE/bin -p
 mv debianConfig/bin/aarch64/qj* ~/SMBSE/bin/;
 rm debianConfig/ -r;
 yes | apt install p7zip-full;
-curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/refs/heads/main/.bashrc' -o ~/.basrc && source ~/.bashrc;
+curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/refs/heads/main/.bashrc' -o ~/.bashrc && source ~/.bashrc;
 
 echo -e '\n\n\n\n\nInside vim enter ":PlugInstall" without quotes!\n';
 echo 'Inside vim enter ":Codeium Auth" without quotes. Follow steps to sign-in and get your token.';
