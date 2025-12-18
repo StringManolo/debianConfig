@@ -18,7 +18,7 @@ yes | apt install unzip;
 #git clone https://github.com/StringManolo/debianConfig/;
 #mkdir ~/SMBSE/bin -p
 #mv debianConfig/bin/aarch64/android/qj* ~/SMBSE/bin/;
-yes | apt install qjs;
+yes | apt install quickjs;
 rm debianConfig/ -r;
 yes | apt install p7zip-full;
 
