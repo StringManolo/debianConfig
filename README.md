@@ -139,7 +139,7 @@ curl 'https://raw.githubusercontent.com/StringManolo/SMBSE/main/.bashrc' -o ~/.b
 
 #### Do all previous steps at once
 ```bash
-yes | apt install curl && curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/refs/heads/main/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 debianConfigSetup.sh && ./debianConfigSetup.sh
+yes | apt update; yes | apt install curl && curl 'https://raw.githubusercontent.com/StringManolo/debianConfig/refs/heads/main/debianConfigSetup.sh' -Lo ./debianConfigSetup.sh && chmod 775 debianConfigSetup.sh && ./debianConfigSetup.sh
 ```
 
 ## Optional
